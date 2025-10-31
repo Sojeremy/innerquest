@@ -1,0 +1,282 @@
+/**
+ * Themes - InnerQuest
+ * Mode clair/sombre, thèmes jour/nuit
+ */
+
+/* ========== Dark Theme ========== */
+body.theme-dark {
+  /* Background colors */
+  --color-bg: #1F2937;
+  --color-bg-alt: #111827;
+
+  /* Text colors */
+  --color-text: #F9FAFB;
+  --color-text-muted: #D1D5DB;
+
+  /* Primary colors (slightly lighter for dark mode) */
+  --color-primary: #6B9AC4;
+  --color-primary-light: #8AB4D5;
+  --color-primary-dark: #457B9D;
+
+  /* Gray scale adjusted */
+  --color-gray-50: #111827;
+  --color-gray-100: #1F2937;
+  --color-gray-200: #374151;
+  --color-gray-300: #4B5563;
+  --color-gray-400: #6B7280;
+  --color-gray-500: #9CA3AF;
+  --color-gray-600: #D1D5DB;
+  --color-gray-700: #E5E7EB;
+  --color-gray-800: #F3F4F6;
+  --color-gray-900: #F9FAFB;
+
+  /* Shadows adjusted for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark theme specific overrides */
+body.theme-dark .narrative-box {
+  background: var(--color-gray-200);
+  border: 1px solid var(--color-gray-300);
+}
+
+body.theme-dark .choice-btn {
+  background: var(--color-gray-200);
+  border-color: var(--color-gray-400);
+  color: var(--color-text);
+}
+
+body.theme-dark .choice-btn:hover:not(:disabled) {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+body.theme-dark .modal-content {
+  background: var(--color-gray-100);
+  border: 1px solid var(--color-gray-300);
+}
+
+body.theme-dark .card {
+  background: var(--color-gray-200);
+  border: 1px solid var(--color-gray-300);
+}
+
+body.theme-dark input,
+body.theme-dark textarea,
+body.theme-dark select {
+  background: var(--color-gray-200);
+  border-color: var(--color-gray-400);
+  color: var(--color-text);
+}
+
+body.theme-dark .stat-progress {
+  background: var(--color-gray-300);
+}
+
+body.theme-dark .loading-screen {
+  background: linear-gradient(135deg, var(--color-gray-100) 0%, var(--color-gray-200) 100%);
+}
+
+/* ========== High Contrast Mode ========== */
+body.high-contrast {
+  /* Increase all contrasts */
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F0F0F0;
+  --color-text: #000000;
+  --color-primary: #0056B3;
+  --color-primary-dark: #003D82;
+
+  /* Borders more visible */
+  --color-gray-300: #000000;
+  --color-gray-400: #333333;
+}
+
+body.high-contrast.theme-dark {
+  --color-bg: #000000;
+  --color-bg-alt: #1A1A1A;
+  --color-text: #FFFFFF;
+  --color-primary: #66B2FF;
+  --color-primary-dark: #3399FF;
+}
+
+body.high-contrast .choice-btn {
+  border-width: 3px;
+  font-weight: 700;
+}
+
+body.high-contrast .stat-progress {
+  border: 2px solid var(--color-text);
+}
+
+body.high-contrast .modal-content {
+  border: 3px solid var(--color-text);
+}
+
+/* ========== Night Theme (softer dark, for evening) ========== */
+body.theme-night {
+  --color-bg: #2D3748;
+  --color-bg-alt: #1A202C;
+  --color-text: #E2E8F0;
+  --color-text-muted: #A0AEC0;
+
+  --color-primary: #63B3ED;
+  --color-primary-light: #90CDF4;
+  --color-primary-dark: #4299E1;
+
+  /* Warmer tones for night */
+  --color-secondary: #B794F4;
+  --color-accent: #FC8181;
+}
+
+body.theme-night .narrative-box {
+  background: rgba(45, 55, 72, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+body.theme-night .loading-screen {
+  background: linear-gradient(135deg, #1A202C 0%, #2D3748 100%);
+}
+
+/* ========== Day Theme (warmer light, for daytime) ========== */
+body.theme-day {
+  --color-bg: #FFFBF0;
+  --color-bg-alt: #FFF8E1;
+  --color-text: #2C3E50;
+
+  /* Warmer primary for day */
+  --color-primary: #F39C12;
+  --color-primary-light: #F4A261;
+  --color-primary-dark: #E67E22;
+
+  --color-secondary: #FFD93D;
+  --color-accent: #E74C3C;
+}
+
+body.theme-day .loading-screen {
+  background: linear-gradient(135deg, #FFD93D 0%, #F39C12 100%);
+}
+
+/* ========== Seasonal Themes (bonus) ========== */
+
+/* Spring */
+body.theme-spring {
+  --color-bg: #F0FFF4;
+  --color-primary: #48BB78;
+  --color-secondary: #9AE6B4;
+  --color-accent: #F687B3;
+}
+
+/* Summer */
+body.theme-summer {
+  --color-bg: #FFFAF0;
+  --color-primary: #ED8936;
+  --color-secondary: #FBD38D;
+  --color-accent: #FC8181;
+}
+
+/* Autumn */
+body.theme-autumn {
+  --color-bg: #FFF5F0;
+  --color-primary: #D97706;
+  --color-secondary: #F59E0B;
+  --color-accent: #DC2626;
+}
+
+/* Winter */
+body.theme-winter {
+  --color-bg: #F7FAFC;
+  --color-primary: #4299E1;
+  --color-secondary: #90CDF4;
+  --color-accent: #805AD5;
+}
+
+/* ========== Auto Theme (follows system preference) ========== */
+@media (prefers-color-scheme: dark) {
+  body.theme-auto {
+    /* Apply dark theme variables */
+    --color-bg: #1F2937;
+    --color-bg-alt: #111827;
+    --color-text: #F9FAFB;
+    --color-text-muted: #D1D5DB;
+    --color-primary: #6B9AC4;
+    --color-primary-light: #8AB4D5;
+    --color-primary-dark: #457B9D;
+  }
+
+  body.theme-auto .narrative-box {
+    background: var(--color-gray-200);
+  }
+
+  body.theme-auto .choice-btn {
+    background: var(--color-gray-200);
+    border-color: var(--color-gray-400);
+  }
+}
+
+/* ========== Phase-based Theme Adjustments ========== */
+
+/* Phase 0: Awakening - Soft pastels */
+body[data-phase="0"] {
+  --color-primary: #A8DADC;
+  --color-accent: #F4A261;
+}
+
+/* Phase 1: Chaos - Intense colors */
+body[data-phase="1"] {
+  --color-primary: #E63946;
+  --color-accent: #F77F00;
+}
+
+/* Phase 2: Quest - Balanced blues */
+body[data-phase="2"] {
+  --color-primary: #457B9D;
+  --color-accent: #A8DADC;
+}
+
+/* Phase 3: Harmony - Peaceful purples */
+body[data-phase="3"] {
+  --color-primary: #9B59B6;
+  --color-accent: #A8DADC;
+}
+
+/* ========== Smooth Theme Transitions ========== */
+body {
+  transition: background-color 0.5s ease,
+              color 0.5s ease;
+}
+
+.narrative-box,
+.choice-btn,
+.modal-content,
+.card {
+  transition: background-color 0.5s ease,
+              color 0.5s ease,
+              border-color 0.5s ease;
+}
+
+/* ========== Print Styles (force light theme) ========== */
+@media print {
+  body {
+    --color-bg: white !important;
+    --color-text: black !important;
+    --color-primary: #457B9D !important;
+  }
+
+  * {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* ========== Accessibility: Reduced Transparency ========== */
+@media (prefers-reduced-transparency) {
+  body.theme-night .narrative-box {
+    backdrop-filter: none;
+    background: #2D3748;
+  }
+}

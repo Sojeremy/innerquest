@@ -14,7 +14,7 @@
   {
     "id": "tip_002",
     "text": {
-      "fr": "Entre ce que je pense, ce que je veux dire, ce que je crois dire, ce que je dis, ce que vous avez envie d'entendre, ce que vous croyez entendre, ce que vous entendez, ce que vous avez envie de comprendre, ce que vous croyez comprendre, ce que vous comprenez... il y a dix possibilités qu'on ait des difficultés à communiquer. Mais essayons quand même...",
+      "fr": "Entre ce que je pense, ce que je veux dire, ce que je crois dire, ce que je dis, ce que vous avez envie d'entendre, ce que vous croyez entendre, ce que vous entendez, ce que vous avez envie de comprendre, ce que vous croyez comprendre, ce que vous comprenez... il y a dix possibilitÃ©s qu'on ait des difficultÃ©s Ã  communiquer. Mais essayons quand mÃªme...",
       "en": "Between what I think, what I want to say, what I believe I say, what I say, what you want to hear, what you believe to hear, what you hear, what you want to understand, what you believe you understand, what you understand... there are ten possibilities that we will have difficulties communicating. But let's try anyway..."
     },
     "author": {
@@ -26,11 +26,11 @@
   {
     "id": "tip_003",
     "text": {
-      "fr": "Hier je me suis comporté intelligemment et j'ai voulu changer le monde. Aujourd'hui je me comporte sagement et je me change moi-même.",
+      "fr": "Hier je me suis comportÃ© intelligemment et j'ai voulu changer le monde. Aujourd'hui je me comporte sagement et je me change moi-mÃªme.",
       "en": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself."
     },
     "author": {
-      "fr": "Rûmî",
+      "fr": "RÃ»mÃ®",
       "en": "Rumi"
     },
     "theme": "transformation"
@@ -38,7 +38,7 @@
   {
     "id": "tip_004",
     "text": {
-      "fr": "La vie est un mystère qu'il faut vivre, et non un problème à résoudre.",
+      "fr": "La vie est un mystÃ¨re qu'il faut vivre, et non un problÃ¨me Ã  rÃ©soudre.",
       "en": "Life is a mystery to be lived, not a problem to be solved."
     },
     "author": {
@@ -50,7 +50,7 @@
   {
     "id": "tip_005",
     "text": {
-      "fr": "Le bonheur n'est pas une destination à atteindre, mais une façon de voyager.",
+      "fr": "Le bonheur n'est pas une destination Ã  atteindre, mais une faÃ§on de voyager.",
       "en": "Happiness is not a destination to reach, but a way of traveling."
     },
     "author": {
@@ -66,7 +66,7 @@
       "en": "It is not because things are difficult that we do not dare, it is because we do not dare that they are difficult."
     },
     "author": {
-      "fr": "Sénèque",
+      "fr": "SÃ©nÃ¨que",
       "en": "Seneca"
     },
     "theme": "courage"
@@ -74,7 +74,7 @@
   {
     "id": "tip_007",
     "text": {
-      "fr": "La seule façon de faire du bon travail est d'aimer ce que vous faites.",
+      "fr": "La seule faÃ§on de faire du bon travail est d'aimer ce que vous faites.",
       "en": "The only way to do great work is to love what you do."
     },
     "author": {
@@ -86,7 +86,7 @@
   {
     "id": "tip_008",
     "text": {
-      "fr": "Connais-toi toi-même.",
+      "fr": "Connais-toi toi-mÃªme.",
       "en": "Know thyself."
     },
     "author": {
@@ -98,7 +98,7 @@
   {
     "id": "tip_009",
     "text": {
-      "fr": "La paix vient de l'intérieur. Ne la cherchez pas à l'extérieur.",
+      "fr": "La paix vient de l'intÃ©rieur. Ne la cherchez pas Ã  l'extÃ©rieur.",
       "en": "Peace comes from within. Do not seek it without."
     },
     "author": {
@@ -110,7 +110,7 @@
   {
     "id": "tip_010",
     "text": {
-      "fr": "Vous devez être le changement que vous voulez voir dans ce monde.",
+      "fr": "Vous devez Ãªtre le changement que vous voulez voir dans ce monde.",
       "en": "You must be the change you wish to see in the world."
     },
     "author": {

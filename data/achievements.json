@@ -6,11 +6,11 @@
       "en": "First steps"
     },
     "description": {
-      "fr": "Commence ton voyage intérieur",
+      "fr": "Commence ton voyage intÃ©rieur",
       "en": "Begin your inner journey"
     },
     "condition": { "day": 1 },
-    "icon": "<1"
+    "icon": "trophy"
   },
   {
     "id": "week_warrior",
@@ -23,33 +23,33 @@
       "en": "Reach day 7"
     },
     "condition": { "day": 7 },
-    "icon": "P"
+    "icon": "trophy"
   },
   {
     "id": "balanced_soul",
     "name": {
-      "fr": "Âme équilibrée",
+      "fr": "Ã‚me Ã©quilibrÃ©e",
       "en": "Balanced soul"
     },
     "description": {
-      "fr": "Atteins un équilibre global de 75+",
+      "fr": "Atteins un Ã©quilibre global de 75+",
       "en": "Reach a global balance of 75+"
     },
     "condition": { "balance": { "min": 75 } },
-    "icon": "–"
+    "icon": "trophy"
   },
   {
     "id": "confidence_master",
     "name": {
-      "fr": "Maître de la confiance",
+      "fr": "MaÃ®tre de la confiance",
       "en": "Confidence master"
     },
     "description": {
-      "fr": "Complète la quête de confiance",
+      "fr": "ComplÃ¨te la quÃªte de confiance",
       "en": "Complete the confidence quest"
     },
     "condition": { "quest": "quest_confidence" },
-    "icon": "=ª"
+    "icon": "trophy"
   },
   {
     "id": "purpose_seeker",
@@ -58,11 +58,11 @@
       "en": "Purpose seeker"
     },
     "description": {
-      "fr": "Complète la quête de sens",
+      "fr": "ComplÃ¨te la quÃªte de sens",
       "en": "Complete the purpose quest"
     },
     "condition": { "quest": "quest_meaning" },
-    "icon": "="
+    "icon": "trophy"
   },
   {
     "id": "harmony_achieved",
@@ -71,42 +71,42 @@
       "en": "Harmony achieved"
     },
     "description": {
-      "fr": "Complète la quête d'équilibre",
+      "fr": "ComplÃ¨te la quÃªte d'Ã©quilibre",
       "en": "Complete the balance quest"
     },
     "condition": { "quest": "quest_balance" },
-    "icon": "=J"
+    "icon": "trophy"
   },
   {
     "id": "journaling_master",
     "name": {
-      "fr": "Maître du journal",
+      "fr": "MaÃ®tre du journal",
       "en": "Journaling master"
     },
     "description": {
-      "fr": "Écris 30 entrées dans ton journal",
+      "fr": "Ã‰cris 30 entrÃ©es dans ton journal",
       "en": "Write 30 journal entries"
     },
     "condition": { "journalEntries": 30 },
-    "icon": "=Ö"
+    "icon": "trophy"
   },
   {
     "id": "energy_peak",
     "name": {
-      "fr": "Pic d'énergie",
+      "fr": "Pic d'Ã©nergie",
       "en": "Energy peak"
     },
     "description": {
-      "fr": "Atteins 100 en énergie",
+      "fr": "Atteins 100 en Ã©nergie",
       "en": "Reach 100 energy"
     },
     "condition": { "stat": "energie", "value": 100 },
-    "icon": "¡"
+    "icon": "trophy"
   },
   {
     "id": "mental_clarity",
     "name": {
-      "fr": "Clarté mentale",
+      "fr": "ClartÃ© mentale",
       "en": "Mental clarity"
     },
     "description": {
@@ -114,33 +114,33 @@
       "en": "Reach 100 mental"
     },
     "condition": { "stat": "mental", "value": 100 },
-    "icon": ">à"
+    "icon": "trophy"
   },
   {
     "id": "emotional_wisdom",
     "name": {
-      "fr": "Sagesse émotionnelle",
+      "fr": "Sagesse Ã©motionnelle",
       "en": "Emotional wisdom"
     },
     "description": {
-      "fr": "Atteins 100 en émotionnel",
+      "fr": "Atteins 100 en Ã©motionnel",
       "en": "Reach 100 emotional"
     },
     "condition": { "stat": "emotionnel", "value": 100 },
-    "icon": "d"
+    "icon": "trophy"
   },
   {
     "id": "spiritual_awakening",
     "name": {
-      "fr": "Éveil spirituel",
+      "fr": "Ã‰veil spirituel",
       "en": "Spiritual awakening"
     },
     "description": {
-      "fr": "Atteins 100 en spiritualité",
+      "fr": "Atteins 100 en spiritualitÃ©",
       "en": "Reach 100 spirituality"
     },
     "condition": { "stat": "spiritualite", "value": 100 },
-    "icon": "("
+    "icon": "trophy"
   },
   {
     "id": "persistent_traveler",
@@ -153,6 +153,6 @@
       "en": "Reach day 50"
     },
     "condition": { "day": 50 },
-    "icon": "<Æ"
+    "icon": "trophy"
   }
 ]
