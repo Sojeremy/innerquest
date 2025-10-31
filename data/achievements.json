@@ -1,0 +1,158 @@
+[
+  {
+    "id": "first_steps",
+    "name": {
+      "fr": "Premiers pas",
+      "en": "First steps"
+    },
+    "description": {
+      "fr": "Commence ton voyage intérieur",
+      "en": "Begin your inner journey"
+    },
+    "condition": { "day": 1 },
+    "icon": "<1"
+  },
+  {
+    "id": "week_warrior",
+    "name": {
+      "fr": "Guerrier d'une semaine",
+      "en": "Week warrior"
+    },
+    "description": {
+      "fr": "Atteins le jour 7",
+      "en": "Reach day 7"
+    },
+    "condition": { "day": 7 },
+    "icon": "P"
+  },
+  {
+    "id": "balanced_soul",
+    "name": {
+      "fr": "Âme équilibrée",
+      "en": "Balanced soul"
+    },
+    "description": {
+      "fr": "Atteins un équilibre global de 75+",
+      "en": "Reach a global balance of 75+"
+    },
+    "condition": { "balance": { "min": 75 } },
+    "icon": "–"
+  },
+  {
+    "id": "confidence_master",
+    "name": {
+      "fr": "Maître de la confiance",
+      "en": "Confidence master"
+    },
+    "description": {
+      "fr": "Complète la quête de confiance",
+      "en": "Complete the confidence quest"
+    },
+    "condition": { "quest": "quest_confidence" },
+    "icon": "=ª"
+  },
+  {
+    "id": "purpose_seeker",
+    "name": {
+      "fr": "Chercheur de sens",
+      "en": "Purpose seeker"
+    },
+    "description": {
+      "fr": "Complète la quête de sens",
+      "en": "Complete the purpose quest"
+    },
+    "condition": { "quest": "quest_meaning" },
+    "icon": "="
+  },
+  {
+    "id": "harmony_achieved",
+    "name": {
+      "fr": "Harmonie accomplie",
+      "en": "Harmony achieved"
+    },
+    "description": {
+      "fr": "Complète la quête d'équilibre",
+      "en": "Complete the balance quest"
+    },
+    "condition": { "quest": "quest_balance" },
+    "icon": "=J"
+  },
+  {
+    "id": "journaling_master",
+    "name": {
+      "fr": "Maître du journal",
+      "en": "Journaling master"
+    },
+    "description": {
+      "fr": "Écris 30 entrées dans ton journal",
+      "en": "Write 30 journal entries"
+    },
+    "condition": { "journalEntries": 30 },
+    "icon": "=Ö"
+  },
+  {
+    "id": "energy_peak",
+    "name": {
+      "fr": "Pic d'énergie",
+      "en": "Energy peak"
+    },
+    "description": {
+      "fr": "Atteins 100 en énergie",
+      "en": "Reach 100 energy"
+    },
+    "condition": { "stat": "energie", "value": 100 },
+    "icon": "¡"
+  },
+  {
+    "id": "mental_clarity",
+    "name": {
+      "fr": "Clarté mentale",
+      "en": "Mental clarity"
+    },
+    "description": {
+      "fr": "Atteins 100 en mental",
+      "en": "Reach 100 mental"
+    },
+    "condition": { "stat": "mental", "value": 100 },
+    "icon": ">à"
+  },
+  {
+    "id": "emotional_wisdom",
+    "name": {
+      "fr": "Sagesse émotionnelle",
+      "en": "Emotional wisdom"
+    },
+    "description": {
+      "fr": "Atteins 100 en émotionnel",
+      "en": "Reach 100 emotional"
+    },
+    "condition": { "stat": "emotionnel", "value": 100 },
+    "icon": "d"
+  },
+  {
+    "id": "spiritual_awakening",
+    "name": {
+      "fr": "Éveil spirituel",
+      "en": "Spiritual awakening"
+    },
+    "description": {
+      "fr": "Atteins 100 en spiritualité",
+      "en": "Reach 100 spirituality"
+    },
+    "condition": { "stat": "spiritualite", "value": 100 },
+    "icon": "("
+  },
+  {
+    "id": "persistent_traveler",
+    "name": {
+      "fr": "Voyageur persistant",
+      "en": "Persistent traveler"
+    },
+    "description": {
+      "fr": "Atteins le jour 50",
+      "en": "Reach day 50"
+    },
+    "condition": { "day": 50 },
+    "icon": "<Æ"
+  }
+]

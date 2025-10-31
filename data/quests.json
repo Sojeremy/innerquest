@@ -1,0 +1,133 @@
+[
+  {
+    "id": "quest_confidence",
+    "title": {
+      "fr": "Retrouver confiance en soi",
+      "en": "Regain self-confidence"
+    },
+    "description": {
+      "fr": "Un chemin vers la reconnexion avec ta force intérieure",
+      "en": "A path to reconnecting with your inner strength"
+    },
+    "phase": 1,
+    "steps": [
+      {
+        "id": "step_1",
+        "description": {
+          "fr": "Identifier une peur que tu souhaites dépasser",
+          "en": "Identify a fear you want to overcome"
+        },
+        "condition": { "day": { "min": 10 } }
+      },
+      {
+        "id": "step_2",
+        "description": {
+          "fr": "Affronter une situation inconfortable",
+          "en": "Face an uncomfortable situation"
+        },
+        "condition": { "event": "chaos_002", "choice": 0 }
+      },
+      {
+        "id": "step_3",
+        "description": {
+          "fr": "Célébrer tes progrès",
+          "en": "Celebrate your progress"
+        },
+        "condition": { "balance": { "min": 60 } }
+      }
+    ],
+    "rewards": {
+      "mental": 20,
+      "emotionnel": 15,
+      "achievement": "confidence_master"
+    }
+  },
+  {
+    "id": "quest_meaning",
+    "title": {
+      "fr": "Trouver son sens",
+      "en": "Find your purpose"
+    },
+    "description": {
+      "fr": "Explorer ce qui donne vraiment un sens à ta vie",
+      "en": "Explore what truly gives meaning to your life"
+    },
+    "phase": 2,
+    "steps": [
+      {
+        "id": "step_1",
+        "description": {
+          "fr": "Réfléchir en profondeur à tes valeurs",
+          "en": "Deeply reflect on your values"
+        },
+        "condition": { "day": { "min": 30 } }
+      },
+      {
+        "id": "step_2",
+        "description": {
+          "fr": "Redécouvrir une passion oubliée",
+          "en": "Rediscover a forgotten passion"
+        },
+        "condition": { "event": "quest_002", "choice": 0 }
+      },
+      {
+        "id": "step_3",
+        "description": {
+          "fr": "Intégrer ce sens dans ton quotidien",
+          "en": "Integrate this meaning into your daily life"
+        },
+        "condition": { "spiritualite": { "min": 70 } }
+      }
+    ],
+    "rewards": {
+      "spiritualite": 25,
+      "mental": 15,
+      "achievement": "purpose_seeker"
+    }
+  },
+  {
+    "id": "quest_balance",
+    "title": {
+      "fr": "L'équilibre intérieur",
+      "en": "Inner balance"
+    },
+    "description": {
+      "fr": "Harmoniser tous les aspects de ton être",
+      "en": "Harmonize all aspects of your being"
+    },
+    "phase": 3,
+    "steps": [
+      {
+        "id": "step_1",
+        "description": {
+          "fr": "Maintenir un équilibre global > 70 pendant 7 jours",
+          "en": "Maintain global balance > 70 for 7 days"
+        },
+        "condition": { "balance": { "min": 70 }, "duration": 7 }
+      },
+      {
+        "id": "step_2",
+        "description": {
+          "fr": "Gérer une difficulté avec sagesse",
+          "en": "Handle a difficulty with wisdom"
+        },
+        "condition": { "event": "harmony_002", "choice": [0, 1] }
+      },
+      {
+        "id": "step_3",
+        "description": {
+          "fr": "Célébrer ta transformation",
+          "en": "Celebrate your transformation"
+        },
+        "condition": { "day": { "min": 50 } }
+      }
+    ],
+    "rewards": {
+      "energie": 20,
+      "mental": 20,
+      "emotionnel": 20,
+      "spiritualite": 20,
+      "achievement": "harmony_achieved"
+    }
+  }
+]

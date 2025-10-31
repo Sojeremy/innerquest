@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "language": "fr",
+    "languageName": "Français",
+    "version": "1.0.0"
+  },
+  "ui": {
+    "title": "InnerQuest",
+    "subtitle": "Ton voyage intérieur commence ici",
+    "newGame": "Nouvelle partie",
+    "continue": "Continuer",
+    "settings": "Paramètres",
+    "save": "Sauvegarder",
+    "load": "Charger",
+    "export": "Exporter",
+    "import": "Importer",
+    "menu": "Menu",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "yes": "Oui",
+    "no": "Non",
+    "journal": "Journal",
+    "quests": "Quêtes",
+    "achievements": "Succès",
+    "statistics": "Statistiques"
+  },
+  "stats": {
+    "energy": "Énergie",
+    "mental": "Mental",
+    "emotional": "Émotionnel",
+    "spiritual": "Spiritualité",
+    "balance": "Équilibre global",
+    "day": "Jour {day}",
+    "globalBalance": "Équilibre : {balance}%"
+  },
+  "game": {
+    "dayStart": "Jour {day}",
+    "dayEnd": "Fin de journée",
+    "journalPrompt": "Comment te sens-tu aujourd'hui ? (optionnel)",
+    "journalPlaceholder": "Écris tes pensées, tes émotions, ce que tu as appris...",
+    "nextDay": "Jour suivant",
+    "chooseAction": "Que choisis-tu ?",
+    "loading": "Chargement...",
+    "welcome": "Bienvenue dans InnerQuest"
+  },
+  "phases": {
+    "awakening": "Le Réveil intérieur",
+    "chaos": "Le Chaos émotionnel",
+    "quest": "La Quête de sens",
+    "harmony": "L'Harmonie retrouvée"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "theme": "Thème",
+    "fontSize": "Taille du texte",
+    "animations": "Animations",
+    "audio": "Audio",
+    "music": "Musique",
+    "sfx": "Effets sonores",
+    "volume": "Volume",
+    "accessibility": "Accessibilité",
+    "highContrast": "Contraste élevé",
+    "reduceMotion": "Réduire les animations",
+    "resetGame": "Réinitialiser le jeu",
+    "resetConfirm": "Es-tu sûr de vouloir recommencer ? Cette action est irréversible."
+  },
+  "themes": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "auto": "Automatique"
+  },
+  "fontSizes": {
+    "small": "Petit",
+    "medium": "Moyen",
+    "large": "Grand",
+    "xlarge": "Très grand"
+  },
+  "messages": {
+    "gameSaved": "Partie sauvegardée",
+    "gameLoaded": "Partie chargée",
+    "exportSuccess": "Sauvegarde exportée avec succès",
+    "importSuccess": "Sauvegarde importée avec succès",
+    "error": "Une erreur est survenue",
+    "noSaveFound": "Aucune sauvegarde trouvée",
+    "saveInfo": "Jour {day} - Équilibre: {balance}%",
+    "confirmRestart": "Veux-tu vraiment recommencer ?",
+    "questCompleted": "Quête complétée !",
+    "achievementUnlocked": "Succès débloqué !"
+  },
+  "menu": {
+    "resume": "Reprendre",
+    "saveGame": "Sauvegarder",
+    "loadGame": "Charger",
+    "newGame": "Nouveau jeu",
+    "exportSave": "Exporter sauvegarde",
+    "importSave": "Importer sauvegarde"
+  },
+  "journal": {
+    "title": "Ton journal",
+    "empty": "Ton journal est vide pour le moment. Chaque soir, tu pourras y noter tes réflexions.",
+    "entry": "Jour {day}",
+    "showAll": "Voir tout le journal"
+  },
+  "quests": {
+    "active": "Quêtes actives",
+    "completed": "Quêtes complétées",
+    "none": "Aucune quête active",
+    "progress": "Progression"
+  },
+  "achievements": {
+    "title": "Tes succès",
+    "unlocked": "{count} succès débloqués",
+    "locked": "Non débloqué"
+  }
+}
