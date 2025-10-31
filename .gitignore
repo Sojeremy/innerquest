@@ -22,3 +22,4 @@ build/
 # Assets générés automatiquement (si tu fais du minify ou compile SCSS plus tard)
 *.min.css
 *.min.js
+.server.pid

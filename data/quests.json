@@ -6,7 +6,7 @@
       "en": "Regain self-confidence"
     },
     "description": {
-      "fr": "Un chemin vers la reconnexion avec ta force intérieure",
+      "fr": "Un chemin vers la reconnexion avec ta force intÃ©rieure",
       "en": "A path to reconnecting with your inner strength"
     },
     "phase": 1,
@@ -14,7 +14,7 @@
       {
         "id": "step_1",
         "description": {
-          "fr": "Identifier une peur que tu souhaites dépasser",
+          "fr": "Identifier une peur que tu souhaites dÃ©passer",
           "en": "Identify a fear you want to overcome"
         },
         "condition": { "day": { "min": 10 } }
@@ -30,7 +30,7 @@
       {
         "id": "step_3",
         "description": {
-          "fr": "Célébrer tes progrès",
+          "fr": "CÃ©lÃ©brer tes progrÃ¨s",
           "en": "Celebrate your progress"
         },
         "condition": { "balance": { "min": 60 } }
@@ -49,7 +49,7 @@
       "en": "Find your purpose"
     },
     "description": {
-      "fr": "Explorer ce qui donne vraiment un sens à ta vie",
+      "fr": "Explorer ce qui donne vraiment un sens Ã  ta vie",
       "en": "Explore what truly gives meaning to your life"
     },
     "phase": 2,
@@ -57,7 +57,7 @@
       {
         "id": "step_1",
         "description": {
-          "fr": "Réfléchir en profondeur à tes valeurs",
+          "fr": "RÃ©flÃ©chir en profondeur Ã  tes valeurs",
           "en": "Deeply reflect on your values"
         },
         "condition": { "day": { "min": 30 } }
@@ -65,7 +65,7 @@
       {
         "id": "step_2",
         "description": {
-          "fr": "Redécouvrir une passion oubliée",
+          "fr": "RedÃ©couvrir une passion oubliÃ©e",
           "en": "Rediscover a forgotten passion"
         },
         "condition": { "event": "quest_002", "choice": 0 }
@@ -73,7 +73,7 @@
       {
         "id": "step_3",
         "description": {
-          "fr": "Intégrer ce sens dans ton quotidien",
+          "fr": "IntÃ©grer ce sens dans ton quotidien",
           "en": "Integrate this meaning into your daily life"
         },
         "condition": { "spiritualite": { "min": 70 } }
@@ -88,11 +88,11 @@
   {
     "id": "quest_balance",
     "title": {
-      "fr": "L'équilibre intérieur",
+      "fr": "L'Ã©quilibre intÃ©rieur",
       "en": "Inner balance"
     },
     "description": {
-      "fr": "Harmoniser tous les aspects de ton être",
+      "fr": "Harmoniser tous les aspects de ton Ãªtre",
       "en": "Harmonize all aspects of your being"
     },
     "phase": 3,
@@ -100,7 +100,7 @@
       {
         "id": "step_1",
         "description": {
-          "fr": "Maintenir un équilibre global > 70 pendant 7 jours",
+          "fr": "Maintenir un Ã©quilibre global > 70 pendant 7 jours",
           "en": "Maintain global balance > 70 for 7 days"
         },
         "condition": { "balance": { "min": 70 }, "duration": 7 }
@@ -108,7 +108,7 @@
       {
         "id": "step_2",
         "description": {
-          "fr": "Gérer une difficulté avec sagesse",
+          "fr": "GÃ©rer une difficultÃ© avec sagesse",
           "en": "Handle a difficulty with wisdom"
         },
         "condition": { "event": "harmony_002", "choice": [0, 1] }
@@ -116,7 +116,7 @@
       {
         "id": "step_3",
         "description": {
-          "fr": "Célébrer ta transformation",
+          "fr": "CÃ©lÃ©brer ta transformation",
           "en": "Celebrate your transformation"
         },
         "condition": { "day": { "min": 50 } }
