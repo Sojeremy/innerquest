@@ -15,6 +15,7 @@ InnerQuest est un **jeu de développement personnel gamifié** qui respecte ton 
 ## ✨ Fonctionnalités
 
 ### 🎮 Gameplay
+
 - **4 stats dynamiques** : Énergie, Mental, Émotionnel, Spiritualité (0-100)
 - **Cycle jour/nuit** avec événements aléatoires contextuels
 - **15+ événements narratifs** riches et immersifs (FR/EN)
@@ -24,6 +25,7 @@ InnerQuest est un **jeu de développement personnel gamifié** qui respecte ton 
 - **Sélection pondérée** : événements adaptés à ton état actuel
 
 ### 📖 Progression
+
 - **Journal intime** pour noter tes réflexions chaque soir
 - **3 quêtes de transformation** multi-étapes
 - **12 achievements débloquables** (succès)
@@ -31,6 +33,7 @@ InnerQuest est un **jeu de développement personnel gamifié** qui respecte ton 
 - **Tracking du temps de jeu** et statistiques détaillées
 
 ### 💾 Sauvegarde & Données
+
 - **Auto-sauvegarde** toutes les 30 secondes
 - **Export/Import** de sauvegardes (fichiers JSON téléchargeables)
 - **Versioning** avec migration automatique
@@ -38,12 +41,14 @@ InnerQuest est un **jeu de développement personnel gamifié** qui respecte ton 
 - **Données 100% locales** : aucun serveur, aucun tracking
 
 ### 🌍 Accessibilité & i18n
+
 - **WCAG 2.1 Niveau AA** : navigation clavier, lecteurs d'écran, ARIA complet
 - **Options a11y** : contraste élevé, réduction animations, taille de police ajustable
 - **Multi-langues** : Français complet, infrastructure prête pour EN/ES/DE
 - **Responsive** : mobile-first design
 
 ### 🎨 Interface
+
 - **Design zen** : palette pastel apaisante
 - **Thèmes** : clair/sombre (à finaliser)
 - **Animations douces** : transitions fluides, respect reduced motion
@@ -54,6 +59,7 @@ InnerQuest est un **jeu de développement personnel gamifié** qui respecte ton 
 ## 🚀 Démarrer
 
 ### Installation
+
 ```bash
 # Cloner le repo
 git clone <URL_DU_REPO>
@@ -72,6 +78,7 @@ http://localhost:8080
 **Aucune dépendance !** 100% vanilla HTML/CSS/JS.
 
 ### Développement
+
 1. **Mode DEBUG** : Dans `js/config.js`, mettre `DEBUG: true`
 2. **Hot reload** : Utiliser Live Server (VS Code) ou similaire
 3. **Tests** : Ouvrir `tests/test-runner.html` dans le navigateur
@@ -155,6 +162,7 @@ innerquest/
 ## 🧠 Architecture Technique
 
 ### Modules Core
+
 - **config.js** : Configuration centralisée (stats, UI, i18n, storage)
 - **utils.js** : Fonctions utilitaires (clamp, random, debounce, sanitize, errorHandler)
 - **player.js** : Gestion du joueur (stats, progression, journal, quêtes, achievements)
@@ -163,6 +171,7 @@ innerquest/
 - **storage.js** : Persistance avancée (save/load, export/import, versioning, backup)
 
 ### Flux de données
+
 ```
 main.js → init()
   ↓
@@ -188,6 +197,7 @@ storage.js → save(player)
 ## 📊 Contenu Narratif
 
 ### Événements (15 actuels, 80+ prévus)
+
 - **Phase 0 - Réveil intérieur** : 3 événements d'éveil
 - **Phase 1 - Chaos émotionnel** : 3 événements de transformation
 - **Phase 2 - Quête de sens** : 3 événements de découverte
@@ -195,17 +205,20 @@ storage.js → save(player)
 - **Universels** : 3 événements sans phase spécifique
 
 Chaque événement :
+
 - Texte immersif (FR/EN)
 - 3 choix avec conséquences équilibrées
 - Tags thématiques
 - Poids pour sélection
 
 ### Quêtes (3 actuelles)
+
 1. **Retrouver confiance en soi** (Phase 1)
 2. **Trouver son sens** (Phase 2)
 3. **L'équilibre intérieur** (Phase 3)
 
 ### Achievements (12)
+
 - Progressi f (jours 1, 7, 50...)
 - Stats (atteindre 100 dans chaque stat)
 - Quêtes (compléter les 3 quêtes)
@@ -216,18 +229,21 @@ Chaque événement :
 ## 🎨 Design System
 
 ### Palette de couleurs
+
 - **Background** : `#FDFCF7` (crème doux)
 - **Primary** : `#457B9D` (bleu apaisant)
 - **Secondary** : `#A8DADC` (cyan clair)
 - **Accent** : `#E63946` (rouge passion)
 
 ### Stats colors
+
 - **Énergie** : `#F4A261` (orange)
 - **Mental** : `#457B9D` (bleu)
 - **Émotionnel** : `#E63946` (rouge)
 - **Spiritualité** : `#9B59B6` (violet)
 
 ### Typographie
+
 - **Titres** : Poppins (moderne, clean)
 - **Corps** : Open Sans (lisible, pro)
 
@@ -236,6 +252,7 @@ Chaque événement :
 ## 🧪 Tests
 
 ### Framework vanilla
+
 ```javascript
 // Exemple de test
 test.describe('Player module', () => {
@@ -254,6 +271,7 @@ test.describe('Player module', () => {
 ## 🌍 Internationalisation
 
 ### Structure i18n
+
 ```javascript
 // locales/fr.json
 {
@@ -276,12 +294,14 @@ i18n.t('game.dayStart', { day: 5 }) // "Jour 5"
 ## ♿ Accessibilité
 
 ### Standards
+
 - **WCAG 2.1 Niveau AA** minimum
 - **Navigation clavier** complète (Tab, Enter, Esc)
 - **Screen readers** supportés (NVDA, JAWS, VoiceOver)
 - **ARIA** complet (roles, labels, live regions)
 
 ### Fonctionnalités
+
 - Contraste élevé (option)
 - Taille de police ajustable (4 niveaux)
 - Réduction animations (`prefers-reduced-motion` + option)
@@ -295,6 +315,7 @@ i18n.t('game.dayStart', { day: 5 }) // "Jour 5"
 ## 🤝 Contribuer
 
 ### Quick start
+
 1. Fork le repo
 2. Créer une branche : `git checkout -b feature/ma-feature`
 3. Commit : `git commit -m "feat: ajoute ma feature"`
@@ -302,6 +323,7 @@ i18n.t('game.dayStart', { day: 5 }) // "Jour 5"
 5. Ouvrir une Pull Request
 
 ### Standards
+
 - **Code** : ES6+, JSDoc, vanilla (no frameworks)
 - **Commits** : Conventional Commits (`feat:`, `fix:`, `docs:`, etc.)
 - **Tests** : Tester manuellement avant PR
@@ -314,6 +336,7 @@ i18n.t('game.dayStart', { day: 5 }) // "Jour 5"
 ## 📦 Déploiement
 
 ### GitHub Pages
+
 ```bash
 # 1. Push vers GitHub
 git add .
@@ -328,6 +351,7 @@ git push origin main
 ```
 
 ### Optimisations
+
 - **Lighthouse** : Viser > 90 sur tous les critères
 - **Compression** : Minifier CSS/JS en prod (optionnel)
 - **PWA** : Activer manifest + service worker pour mode offline
@@ -337,6 +361,7 @@ git push origin main
 ## 📝 Documentation
 
 ### Documents clés
+
 - **Architecture** : `docs/architecture-technique.md`
 - **Accessibilité** : `docs/accessibility.md`
 - **i18n** : `docs/internationalization.md`
@@ -344,6 +369,7 @@ git push origin main
 - **Contribution** : `docs/contribution-guide.md`
 
 ### Roadmap
+
 - **v0.1** : HUD + événements basiques ✅
 - **v0.2** : Choix + sauvegarde ✅
 - **v0.3** : Quêtes + achievements 🔧
@@ -355,6 +381,7 @@ git push origin main
 ## 🎯 Prochaines Étapes
 
 ### MVP (à finaliser)
+
 1. ✅ Architecture & modules core
 2. ✅ Contenu narratif initial
 3. 🔧 CSS complets (layout, ui, animations, themes)
@@ -363,6 +390,7 @@ git push origin main
 6. 🔧 i18n module (traductions dynamiques)
 
 ### Phase suivante
+
 - Enrichir contenu (80+ événements)
 - Modules quests & achievements
 - Audio ambiant

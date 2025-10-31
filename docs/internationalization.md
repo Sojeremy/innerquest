@@ -1,6 +1,7 @@
 # Internationalisation (i18n) – InnerQuest
 
 ## Vision
+
 Préparer InnerQuest pour une audience internationale tout en commençant avec le français comme langue principale.
 
 ## Architecture i18n
@@ -351,6 +352,7 @@ if (rtlLanguages.includes(locale)) {
 ## Checklist i18n
 
 ### Code
+
 - [ ] Aucun texte hardcodé en français dans le code
 - [ ] Toutes les chaînes UI dans fichiers de traduction
 - [ ] Système de fallback fonctionnel
@@ -359,18 +361,21 @@ if (rtlLanguages.includes(locale)) {
 - [ ] Dates/nombres formatés selon locale
 
 ### Contenu
+
 - [ ] Tous les événements traduits
 - [ ] Toutes les quêtes traduites
 - [ ] Tips/citations traduites
 - [ ] Messages d'erreur traduits
 
 ### UI
+
 - [ ] Sélecteur de langue dans paramètres
 - [ ] Langue sauvegardée dans localStorage
 - [ ] Mise à jour dynamique sans rechargement
 - [ ] Attribut lang sur <html> correct
 
 ### Tests
+
 - [ ] Tester chaque langue supportée
 - [ ] Vérifier longueur des textes (débordements)
 - [ ] Tester changement de langue en cours de jeu
@@ -381,15 +386,18 @@ if (rtlLanguages.includes(locale)) {
 ## Feuille de route i18n
 
 ### Phase 1 (v0.1-0.3)
+
 - Infrastructure i18n en place
 - Français complet
 - Anglais partiel (UI uniquement)
 
 ### Phase 2 (v0.4-0.6)
+
 - Anglais complet (tous événements/quêtes)
 - Espagnol (UI + événements principaux)
 
 ### Phase 3 (v1.0+)
+
 - Espagnol complet
 - Allemand
 - Autres langues selon demande communauté

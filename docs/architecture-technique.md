@@ -95,11 +95,13 @@ InnerQuest est une application web statique construite selon une architecture mo
 ### 1. config.js - Configuration centralisée
 
 **Responsabilités** :
+
 - Centraliser toutes les constantes de configuration
 - Définir les valeurs par défaut
 - Configurer comportements système
 
 **Exports** :
+
 ```javascript
 export default {
   GAME: {
@@ -134,6 +136,7 @@ export default {
 ### 2. main.js - Point d'entrée
 
 **Responsabilités** :
+
 - Initialiser tous les modules
 - Charger ressources critiques (traductions, événements)
 - Détecter sauvegarde existante ou nouveau jeu
@@ -141,6 +144,7 @@ export default {
 - Gérer lifecycle de l'app
 
 **Flux d'initialisation** :
+
 ```javascript
 async function init() {
   try {
@@ -191,6 +195,7 @@ document.addEventListener('DOMContentLoaded', init);
 ### 3. player.js - État du joueur
 
 **Responsabilités** :
+
 - Gérer les stats (énergie, mental, émotionnel, spiritualité)
 - Calculer indice d'équilibre global
 - Appliquer effets des choix
@@ -198,6 +203,7 @@ document.addEventListener('DOMContentLoaded', init);
 - Historique des choix et journal
 
 **Structure de données** :
+
 ```javascript
 class Player {
   constructor() {
@@ -259,6 +265,7 @@ class Player {
 ### 4. game.js - Moteur de jeu
 
 **Responsabilités** :
+
 - Orchestrer le game loop
 - Gérer cycle jour/nuit
 - Déclencher événements
@@ -267,6 +274,7 @@ class Player {
 - Auto-sauvegarde
 
 **API publique** :
+
 ```javascript
 class Game {
   constructor() {
@@ -356,12 +364,14 @@ class Game {
 ### 5. events.js - Système d'événements
 
 **Responsabilités** :
+
 - Charger events.json
 - Filtrer événements selon contexte (phase, stats, historique)
 - Sélectionner événement aléatoire pondéré
 - Validation structure événement
 
 **Logique de sélection** :
+
 ```javascript
 class EventSystem {
   constructor() {
@@ -432,6 +442,7 @@ class EventSystem {
 ### 6. ui.js - Interface utilisateur
 
 **Responsabilités** :
+
 - Mettre à jour DOM
 - Afficher événements et choix
 - Animer transitions
@@ -439,6 +450,7 @@ class EventSystem {
 - Responsive aux événements game
 
 **Composants clés** :
+
 ```javascript
 class UI {
   constructor() {
@@ -561,12 +573,14 @@ class UI {
 ### 7. storage.js - Persistance
 
 **Responsabilités** :
+
 - Sauvegarder/charger état joueur (localStorage)
 - Export/import sauvegardes (JSON download)
 - Gestion versions (migration si structure change)
 - Compression (optionnel, LZ-string)
 
 **API** :
+
 ```javascript
 class Storage {
   constructor() {

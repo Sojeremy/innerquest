@@ -21,6 +21,7 @@ Merci de votre intérêt pour contribuer à InnerQuest ! Ce guide vous aidera à
 ### Nos engagements
 
 InnerQuest est un projet bienveillant et inclusif. Nous nous engageons à :
+
 - Respecter toutes les personnes, quels que soient leur origine, genre, orientation, religion, compétences
 - Accepter les critiques constructives avec ouverture
 - Favoriser un environnement d'apprentissage et de collaboration
@@ -207,6 +208,7 @@ git checkout -b docs/improve-readme
 ```
 
 Types de branches :
+
 - `feature/` : nouvelle fonctionnalité
 - `fix/` : correction de bug
 - `docs/` : documentation
@@ -243,6 +245,7 @@ git push origin feature/add-meditation-events
 ```
 
 Puis créer une PR sur GitHub avec :
+
 - **Titre clair** : "Add meditation event category"
 - **Description** : Expliquer quoi/pourquoi/comment
 - **Screenshots** si changements UI
@@ -332,6 +335,7 @@ Mockups, exemples, références...
 4. Soumettre PR
 
 **Ressources** :
+
 - [ISO 639-1 Language Codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 
 ---
@@ -419,6 +423,7 @@ npx http-server -p 8080
 ## Reconnaissance des contributeurs
 
 Tous les contributeurs seront mentionnés dans :
+
 - Section "Contributors" du README
 - Fichier CONTRIBUTORS.md
 - Changelog pour contributions majeures

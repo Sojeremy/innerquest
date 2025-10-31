@@ -3,6 +3,7 @@
 ## Philosophie de test
 
 InnerQuest étant un projet vanilla JS sans framework, nous adoptons une approche pragmatique :
+
 - **Tests unitaires** pour la logique métier critique
 - **Tests d'intégration** pour les flux de jeu
 - **Tests manuels** pour l'expérience utilisateur
@@ -391,6 +392,7 @@ test.describe('Save/Load system', () => {
 ### Lighthouse (Chrome DevTools)
 
 Cibles :
+
 - **Performance** : > 90
 - **Accessibility** : > 95
 - **Best Practices** : > 90
