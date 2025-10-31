@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InnerQuest - Un jeu narratif d'introspection et de développement personnel">
+  <meta name="theme-color" content="#457B9D">
+
+  <title>InnerQuest - Ton voyage intérieur</title>
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/ui.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/themes.css">
+
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Favicon (optionnel, peut être ajouté plus tard) -->
+  <!-- <link rel="icon" href="/assets/icons/favicon.ico"> -->
+</head>
+<body>
+  <!-- Skip link pour accessibilité -->
+  <a href="#main-content" class="skip-link sr-only-focusable">Aller au contenu principal</a>
+
+  <!-- Écran de chargement -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <p data-i18n="game.loading">Chargement...</p>
+  </div>
+
+  <!-- Écran d'accueil -->
+  <div id="welcome-screen" class="screen" style="display: none;">
+    <div class="welcome-container">
+      <h1 class="title" data-i18n="ui.title">InnerQuest</h1>
+      <p class="subtitle" data-i18n="ui.subtitle">Ton voyage intérieur commence ici</p>
+
+      <div class="welcome-buttons">
+        <button id="btn-new-game" class="btn btn-primary btn-large">
+          <span data-i18n="ui.newGame">Nouvelle partie</span>
+        </button>
+        <button id="btn-continue" class="btn btn-secondary btn-large" style="display: none;">
+          <span data-i18n="ui.continue">Continuer</span>
+        </button>
+        <button id="btn-settings-welcome" class="btn btn-tertiary">
+          <span data-i18n="ui.settings">Paramètres</span>
+        </button>
+      </div>
+
+      <div id="save-info" class="save-info" style="display: none;"></div>
+    </div>
+  </div>
+
+  <!-- Écran de jeu principal -->
+  <div id="game-screen" class="screen" style="display: none;">
+    <!-- Header avec stats -->
+    <header class="game-header" role="banner">
+      <div class="header-top">
+        <div id="day-indicator" class="day-indicator">
+          <span data-i18n="stats.day">Jour</span> <span id="day-number">1</span>
+        </div>
+        <div id="phase-indicator" class="phase-indicator"></div>
+        <button id="btn-menu" class="btn btn-icon" aria-label="Menu">
+          <span>0</span>
+        </button>
+      </div>
+
+      <!-- Barres de stats -->
+      <section id="stats" class="stats-container" aria-labelledby="stats-heading">
+        <h2 id="stats-heading" class="sr-only">Vos statistiques</h2>
+
+        <div class="stat-bar" data-stat="energie">
+          <div class="stat-header">
+            <span class="stat-name" data-i18n="stats.energy">Énergie</span>
+            <span class="stat-value">50</span>
+          </div>
+          <div class="stat-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Énergie">
+            <div class="stat-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar" data-stat="mental">
+          <div class="stat-header">
+            <span class="stat-name" data-i18n="stats.mental">Mental</span>
+            <span class="stat-value">50</span>
+          </div>
+          <div class="stat-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Mental">
+            <div class="stat-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar" data-stat="emotionnel">
+          <div class="stat-header">
+            <span class="stat-name" data-i18n="stats.emotional">Émotionnel</span>
+            <span class="stat-value">50</span>
+          </div>
+          <div class="stat-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Émotionnel">
+            <div class="stat-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <div class="stat-bar" data-stat="spiritualite">
+          <div class="stat-header">
+            <span class="stat-name" data-i18n="stats.spiritual">Spiritualité</span>
+            <span class="stat-value">50</span>
+          </div>
+          <div class="stat-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Spiritualité">
+            <div class="stat-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <div class="global-balance">
+          <span data-i18n="stats.balance">Équilibre global</span>: <strong id="global-balance-value">50%</strong>
+        </div>
+      </section>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main-content" class="game-main" role="main">
+      <!-- Zone narrative -->
+      <article id="narrative" class="narrative-box" aria-labelledby="event-heading">
+        <h2 id="event-heading" class="sr-only">Événement du jour</h2>
+        <div id="event-text" class="event-text">
+          <!-- Le texte de l'événement sera injecté ici -->
+        </div>
+      </article>
+
+      <!-- Zone de choix -->
+      <section id="choices" class="choices-container" aria-labelledby="choices-heading">
+        <h2 id="choices-heading" class="sr-only" data-i18n="game.chooseAction">Que choisis-tu ?</h2>
+        <!-- Les boutons de choix seront injectés ici -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="game-footer" role="contentinfo">
+      <button id="btn-journal-footer" class="btn btn-icon" aria-label="Journal">
+        <span>=Ö</span>
+      </button>
+      <button id="btn-quests-footer" class="btn btn-icon" aria-label="Quêtes">
+        <span><¯</span>
+      </button>
+      <button id="btn-achievements-footer" class="btn btn-icon" aria-label="Succès">
+        <span><Æ</span>
+      </button>
+    </footer>
+  </div>
+
+  <!-- Modal Menu -->
+  <div id="menu-modal" class="modal" role="dialog" aria-labelledby="menu-title" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal="menu-modal"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="menu-title" data-i18n="ui.menu">Menu</h2>
+        <button class="modal-close" data-close-modal="menu-modal" aria-label="Fermer">×</button>
+      </div>
+      <div class="modal-body">
+        <button id="btn-resume" class="btn btn-secondary btn-block">
+          <span data-i18n="menu.resume">Reprendre</span>
+        </button>
+        <button id="btn-save-game" class="btn btn-secondary btn-block">
+          <span data-i18n="menu.saveGame">Sauvegarder</span>
+        </button>
+        <button id="btn-export-save" class="btn btn-secondary btn-block">
+          <span data-i18n="menu.exportSave">Exporter sauvegarde</span>
+        </button>
+        <button id="btn-import-save" class="btn btn-secondary btn-block">
+          <span data-i18n="menu.importSave">Importer sauvegarde</span>
+          <input type="file" id="file-import-save" accept=".json" hidden>
+        </button>
+        <button id="btn-settings-menu" class="btn btn-secondary btn-block">
+          <span data-i18n="ui.settings">Paramètres</span>
+        </button>
+        <button id="btn-new-game-menu" class="btn btn-danger btn-block">
+          <span data-i18n="menu.newGame">Nouveau jeu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Journal -->
+  <div id="journal-modal" class="modal" role="dialog" aria-labelledby="journal-title" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal="journal-modal"></div>
+    <div class="modal-content modal-large">
+      <div class="modal-header">
+        <h2 id="journal-title" data-i18n="game.journalPrompt">Comment te sens-tu aujourd'hui ?</h2>
+        <button class="modal-close" data-close-modal="journal-modal" aria-label="Fermer">×</button>
+      </div>
+      <div class="modal-body">
+        <textarea
+          id="journal-textarea"
+          class="journal-textarea"
+          data-i18n-placeholder="game.journalPlaceholder"
+          placeholder="Écris tes pensées, tes émotions, ce que tu as appris..."
+          rows="8"
+        ></textarea>
+        <div class="modal-actions">
+          <button id="btn-skip-journal" class="btn btn-tertiary" data-i18n="ui.cancel">Passer</button>
+          <button id="btn-submit-journal" class="btn btn-primary" data-i18n="ui.confirm">Confirmer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Paramètres -->
+  <div id="settings-modal" class="modal" role="dialog" aria-labelledby="settings-title" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal="settings-modal"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="settings-title" data-i18n="settings.title">Paramètres</h2>
+        <button class="modal-close" data-close-modal="settings-modal" aria-label="Fermer">×</button>
+      </div>
+      <div class="modal-body settings-body">
+        <!-- Thème -->
+        <div class="setting-group">
+          <label for="setting-theme" data-i18n="settings.theme">Thème</label>
+          <select id="setting-theme" class="setting-select">
+            <option value="light" data-i18n="themes.light">Clair</option>
+            <option value="dark" data-i18n="themes.dark">Sombre</option>
+          </select>
+        </div>
+
+        <!-- Taille de police -->
+        <div class="setting-group">
+          <label for="setting-font-size" data-i18n="settings.fontSize">Taille du texte</label>
+          <select id="setting-font-size" class="setting-select">
+            <option value="small" data-i18n="fontSizes.small">Petit</option>
+            <option value="medium" data-i18n="fontSizes.medium" selected>Moyen</option>
+            <option value="large" data-i18n="fontSizes.large">Grand</option>
+            <option value="xlarge" data-i18n="fontSizes.xlarge">Très grand</option>
+          </select>
+        </div>
+
+        <!-- Animations -->
+        <div class="setting-group">
+          <label class="setting-checkbox">
+            <input type="checkbox" id="setting-animations" checked>
+            <span data-i18n="settings.animations">Animations</span>
+          </label>
+        </div>
+
+        <!-- Contraste élevé -->
+        <div class="setting-group">
+          <label class="setting-checkbox">
+            <input type="checkbox" id="setting-high-contrast">
+            <span data-i18n="settings.highContrast">Contraste élevé</span>
+          </label>
+        </div>
+
+        <!-- Réduire animations (a11y) -->
+        <div class="setting-group">
+          <label class="setting-checkbox">
+            <input type="checkbox" id="setting-reduce-motion">
+            <span data-i18n="settings.reduceMotion">Réduire les animations</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notifications toast -->
+  <div id="notifications" class="notifications-container" role="status" aria-live="polite"></div>
+
+  <!-- Live region pour screen readers -->
+  <div id="sr-announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts (modules ES6) -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

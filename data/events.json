@@ -1,0 +1,453 @@
+[
+  {
+    "id": "awakening_001",
+    "phase": 0,
+    "text": {
+      "fr": "Tu te réveilles avec un sentiment étrange. Pour la première fois depuis longtemps, tu ressens le besoin de prendre soin de toi. Qu'est-ce qui a changé ?",
+      "en": "You wake up with a strange feeling. For the first time in a long while, you feel the need to take care of yourself. What has changed?"
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Prendre le temps de méditer quelques minutes",
+          "en": "Take time to meditate for a few minutes"
+        },
+        "effects": { "mental": 5, "spiritualite": 5, "energie": -2 }
+      },
+      {
+        "label": {
+          "fr": "Écrire tes pensées dans un journal",
+          "en": "Write your thoughts in a journal"
+        },
+        "effects": { "emotionnel": 5, "mental": 3 }
+      },
+      {
+        "label": {
+          "fr": "Ignorer ce sentiment et continuer ta routine",
+          "en": "Ignore this feeling and continue your routine"
+        },
+        "effects": { "energie": 3, "emotionnel": -3 }
+      }
+    ],
+    "tags": ["introspection", "routine", "awakening"],
+    "weight": 2
+  },
+  {
+    "id": "awakening_002",
+    "phase": 0,
+    "text": {
+      "fr": "En marchant dans la rue, tu croises un vieil ami que tu n'as pas vu depuis des années. Il semble heureux et épanoui. Cela te fait réfléchir sur ton propre chemin.",
+      "en": "Walking down the street, you run into an old friend you haven't seen in years. They seem happy and fulfilled. It makes you reflect on your own path."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Prendre le temps de discuter longuement",
+          "en": "Take time for a long conversation"
+        },
+        "effects": { "emotionnel": 7, "mental": 3, "energie": -3 }
+      },
+      {
+        "label": {
+          "fr": "Échanger brièvement et promettre de se revoir",
+          "en": "Exchange briefly and promise to meet again"
+        },
+        "effects": { "emotionnel": 3, "energie": 2 }
+      },
+      {
+        "label": {
+          "fr": "Rester poli mais distant",
+          "en": "Remain polite but distant"
+        },
+        "effects": { "energie": 5, "emotionnel": -5 }
+      }
+    ],
+    "tags": ["social", "reflection", "connection"]
+  },
+  {
+    "id": "awakening_003",
+    "phase": 0,
+    "text": {
+      "fr": "Tu tombes sur un vieux livre de développement personnel que tu avais acheté il y a des années mais jamais lu. Tu le feuillettes et une phrase te marque : 'Le voyage commence par un seul pas'.",
+      "en": "You come across an old self-help book you bought years ago but never read. You flip through it and a phrase strikes you: 'The journey begins with a single step'."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Commencer à le lire sérieusement",
+          "en": "Start reading it seriously"
+        },
+        "effects": { "mental": 6, "spiritualite": 4, "energie": -2 }
+      },
+      {
+        "label": {
+          "fr": "Noter quelques citations qui te parlent",
+          "en": "Note down a few quotes that speak to you"
+        },
+        "effects": { "mental": 4, "emotionnel": 2 }
+      },
+      {
+        "label": {
+          "fr": "Le ranger, peut-être une autre fois",
+          "en": "Put it away, maybe another time"
+        },
+        "effects": { "energie": 3, "mental": -2 }
+      }
+    ],
+    "tags": ["learning", "inspiration", "self-discovery"]
+  },
+  {
+    "id": "chaos_001",
+    "phase": 1,
+    "text": {
+      "fr": "Les changements que tu entreprends commencent à bousculer tes habitudes. Tu te sens déstabilisé, entre l'ancien toi et celui que tu veux devenir. C'est épuisant.",
+      "en": "The changes you're making are starting to disrupt your habits. You feel unsettled, between your old self and who you want to become. It's exhausting."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Persévérer malgré l'inconfort",
+          "en": "Persevere despite the discomfort"
+        },
+        "effects": { "mental": 5, "spiritualite": 5, "energie": -8 }
+      },
+      {
+        "label": {
+          "fr": "Prendre une pause et respirer",
+          "en": "Take a break and breathe"
+        },
+        "effects": { "energie": 8, "emotionnel": 5, "mental": -3 }
+      },
+      {
+        "label": {
+          "fr": "Revenir temporairement à tes anciennes habitudes",
+          "en": "Temporarily return to your old habits"
+        },
+        "effects": { "energie": 10, "emotionnel": -5, "spiritualite": -5 }
+      }
+    ],
+    "tags": ["struggle", "transformation", "perseverance"],
+    "weight": 2
+  },
+  {
+    "id": "chaos_002",
+    "phase": 1,
+    "text": {
+      "fr": "Une situation difficile au travail te met face à tes anciennes réactions. Tu sens la colère monter, mais une petite voix te rappelle que tu as choisi de changer.",
+      "en": "A difficult situation at work confronts you with your old reactions. You feel anger rising, but a small voice reminds you that you've chosen to change."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Respirer profondément et répondre calmement",
+          "en": "Breathe deeply and respond calmly"
+        },
+        "effects": { "mental": 7, "emotionnel": 6, "spiritualite": 4, "energie": -5 }
+      },
+      {
+        "label": {
+          "fr": "T'éloigner pour éviter le conflit",
+          "en": "Step away to avoid conflict"
+        },
+        "effects": { "emotionnel": 3, "energie": -3, "mental": -2 }
+      },
+      {
+        "label": {
+          "fr": "Laisser ta frustration s'exprimer",
+          "en": "Let your frustration express itself"
+        },
+        "effects": { "energie": 5, "emotionnel": -8, "mental": -5 }
+      }
+    ],
+    "tags": ["conflict", "self-control", "growth"]
+  },
+  {
+    "id": "chaos_003",
+    "phase": 1,
+    "text": {
+      "fr": "Tu te sens submergé par toutes les émotions que tu avais enfouies. Elles remontent à la surface comme une vague. C'est inconfortable mais nécessaire.",
+      "en": "You feel overwhelmed by all the emotions you had buried. They're rising to the surface like a wave. It's uncomfortable but necessary."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Les accueillir et les laisser s'exprimer",
+          "en": "Welcome them and let them express themselves"
+        },
+        "effects": { "emotionnel": 10, "mental": 5, "energie": -8 }
+      },
+      {
+        "label": {
+          "fr": "Écrire pour comprendre ce qui remonte",
+          "en": "Write to understand what's coming up"
+        },
+        "effects": { "emotionnel": 7, "mental": 6, "energie": -4 }
+      },
+      {
+        "label": {
+          "fr": "Te distraire pour ne pas y penser",
+          "en": "Distract yourself to avoid thinking about it"
+        },
+        "effects": { "energie": 3, "emotionnel": -6, "mental": -4 }
+      }
+    ],
+    "tags": ["emotions", "healing", "vulnerability"]
+  },
+  {
+    "id": "quest_001",
+    "phase": 2,
+    "text": {
+      "fr": "Après des semaines de turbulences, tu commences à voir plus clair. Une question émerge : qu'est-ce qui donne vraiment du sens à ta vie ?",
+      "en": "After weeks of turbulence, you're starting to see more clearly. A question emerges: what truly gives meaning to your life?"
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Prendre le temps d'explorer cette question en profondeur",
+          "en": "Take time to explore this question deeply"
+        },
+        "effects": { "spiritualite": 8, "mental": 6, "energie": -5 }
+      },
+      {
+        "label": {
+          "fr": "Discuter avec des personnes inspirantes",
+          "en": "Talk with inspiring people"
+        },
+        "effects": { "spiritualite": 5, "emotionnel": 6, "mental": 4 }
+      },
+      {
+        "label": {
+          "fr": "Observer ce qui te fait vibrer au quotidien",
+          "en": "Observe what makes you feel alive daily"
+        },
+        "effects": { "spiritualite": 6, "emotionnel": 5, "energie": -2 }
+      }
+    ],
+    "tags": ["meaning", "purpose", "exploration"],
+    "weight": 2
+  },
+  {
+    "id": "quest_002",
+    "phase": 2,
+    "text": {
+      "fr": "Tu découvres une passion que tu avais mise de côté depuis des années. Cette redécouverte te remplit d'une énergie nouvelle.",
+      "en": "You discover a passion you had set aside for years. This rediscovery fills you with new energy."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "T'y consacrer pleinement",
+          "en": "Dedicate yourself to it fully"
+        },
+        "effects": { "energie": 8, "emotionnel": 7, "spiritualite": 5 }
+      },
+      {
+        "label": {
+          "fr": "L'intégrer progressivement dans ta vie",
+          "en": "Gradually integrate it into your life"
+        },
+        "effects": { "energie": 5, "emotionnel": 5, "mental": 3 }
+      },
+      {
+        "label": {
+          "fr": "En faire un projet à long terme",
+          "en": "Make it a long-term project"
+        },
+        "effects": { "mental": 6, "spiritualite": 6, "energie": -2 }
+      }
+    ],
+    "tags": ["passion", "rediscovery", "joy"]
+  },
+  {
+    "id": "quest_003",
+    "phase": 2,
+    "text": {
+      "fr": "Tu réalises que certaines personnes dans ta vie t'épuisent plus qu'elles ne te nourrissent. Il est temps de réévaluer tes relations.",
+      "en": "You realize that some people in your life drain you more than they nourish you. It's time to reassess your relationships."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Établir des limites saines",
+          "en": "Establish healthy boundaries"
+        },
+        "effects": { "mental": 7, "emotionnel": 5, "energie": 4 }
+      },
+      {
+        "label": {
+          "fr": "Avoir des conversations honnêtes",
+          "en": "Have honest conversations"
+        },
+        "effects": { "emotionnel": 6, "mental": 4, "energie": -4 }
+      },
+      {
+        "label": {
+          "fr": "Prendre de la distance sans confrontation",
+          "en": "Take distance without confrontation"
+        },
+        "effects": { "energie": 5, "mental": 3, "emotionnel": -3 }
+      }
+    ],
+    "tags": ["relationships", "boundaries", "self-care"]
+  },
+  {
+    "id": "harmony_001",
+    "phase": 3,
+    "text": {
+      "fr": "Tu te sens aligné avec toi-même pour la première fois depuis longtemps. L'équilibre que tu as trouvé se reflète dans tous les aspects de ta vie.",
+      "en": "You feel aligned with yourself for the first time in a long while. The balance you've found is reflected in all aspects of your life."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Savourer ce moment de paix intérieure",
+          "en": "Savor this moment of inner peace"
+        },
+        "effects": { "spiritualite": 7, "emotionnel": 7, "mental": 5 }
+      },
+      {
+        "label": {
+          "fr": "Partager ton expérience pour aider les autres",
+          "en": "Share your experience to help others"
+        },
+        "effects": { "emotionnel": 8, "spiritualite": 6, "energie": -3 }
+      },
+      {
+        "label": {
+          "fr": "Réfléchir à comment maintenir cet équilibre",
+          "en": "Reflect on how to maintain this balance"
+        },
+        "effects": { "mental": 8, "spiritualite": 5, "energie": -2 }
+      }
+    },
+    "tags": ["balance", "peace", "fulfillment"],
+    "weight": 2
+  },
+  {
+    "id": "harmony_002",
+    "phase": 3,
+    "text": {
+      "fr": "Une ancienne difficulté réapparaît, mais cette fois, tu la perçois différemment. Tu as grandi, et cela se voit dans ta façon de réagir.",
+      "en": "An old difficulty reappears, but this time, you perceive it differently. You've grown, and it shows in how you react."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "L'accueillir comme une opportunité d'apprentissage",
+          "en": "Welcome it as a learning opportunity"
+        },
+        "effects": { "mental": 6, "spiritualite": 8, "energie": -2 }
+      },
+      {
+        "label": {
+          "fr": "La gérer avec calme et confiance",
+          "en": "Handle it with calm and confidence"
+        },
+        "effects": { "mental": 7, "emotionnel": 6, "energie": 3 }
+      },
+      {
+        "label": {
+          "fr": "Apprécier le chemin parcouru",
+          "en": "Appreciate how far you've come"
+        },
+        "effects": { "emotionnel": 8, "spiritualite": 6, "mental": 4 }
+      }
+    },
+    "tags": ["resilience", "growth", "wisdom"]
+  },
+  {
+    "id": "harmony_003",
+    "phase": 3,
+    "text": {
+      "fr": "Tu regardes en arrière et réalises tout le chemin parcouru. De ce réveil intérieur à aujourd'hui, tu t'es profondément transformé.",
+      "en": "You look back and realize how far you've come. From that inner awakening to today, you've deeply transformed."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Célébrer cette transformation",
+          "en": "Celebrate this transformation"
+        },
+        "effects": { "emotionnel": 10, "spiritualite": 7, "energie": 5 }
+      },
+      {
+        "label": {
+          "fr": "Écrire une lettre à ton ancien toi",
+          "en": "Write a letter to your former self"
+        },
+        "effects": { "emotionnel": 8, "mental": 7, "spiritualite": 6 }
+      },
+      {
+        "label": {
+          "fr": "Te préparer pour les prochaines étapes",
+          "en": "Prepare for the next steps"
+        },
+        "effects": { "mental": 8, "spiritualite": 7, "energie": 3 }
+      }
+    ],
+    "tags": ["transformation", "reflection", "gratitude"]
+  },
+  {
+    "id": "universal_001",
+    "text": {
+      "fr": "La nature t'appelle. Tu ressens le besoin de te reconnecter avec l'essentiel, de respirer l'air pur et de sentir la terre sous tes pieds.",
+      "en": "Nature calls you. You feel the need to reconnect with the essential, to breathe fresh air and feel the earth beneath your feet."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Faire une longue marche en pleine nature",
+          "en": "Take a long walk in nature"
+        },
+        "effects": { "energie": 6, "mental": 6, "spiritualite": 6 }
+      },
+      {
+        "label": {
+          "fr": "Méditer dans un parc",
+          "en": "Meditate in a park"
+        },
+        "effects": { "mental": 8, "spiritualite": 7, "energie": -2 }
+      },
+      {
+        "label": {
+          "fr": "Reporter à plus tard, tu as trop à faire",
+          "en": "Postpone it, you have too much to do"
+        },
+        "effects": { "energie": -4, "emotionnel": -3, "mental": -2 }
+      }
+    ],
+    "tags": ["nature", "reconnection", "well-being"],
+    "weight": 1
+  },
+  {
+    "id": "universal_002",
+    "text": {
+      "fr": "Tu reçois un message inattendu d'une personne à qui tu tiens. Cela réchauffe ton cSur et te rappelle l'importance des connexions authentiques.",
+      "en": "You receive an unexpected message from someone you care about. It warms your heart and reminds you of the importance of authentic connections."
+    },
+    "choices": [
+      {
+        "label": {
+          "fr": "Répondre avec authenticité et chaleur",
+          "en": "Respond with authenticity and warmth"
+        },
+        "effects": { "emotionnel": 8, "spiritualite": 4 }
+      },
+      {
+        "label": {
+          "fr": "Proposer de se voir bientôt",
+          "en": "Suggest meeting soon"
+        },
+        "effects": { "emotionnel": 6, "energie": 4 }
+      },
+      {
+        "label": {
+          "fr": "Répondre brièvement, tu es occupé",
+          "en": "Reply briefly, you're busy"
+        },
+        "effects": { "energie": 2, "emotionnel": -3 }
+      }
+    ],
+    "tags": ["connection", "relationships", "love"]
+  }
+]
