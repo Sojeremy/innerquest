@@ -1,0 +1,24 @@
+# --- .gitignore minimal pour projet HTML/CSS/JS pur ---
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires / backup
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Cache du navigateur ou IDE
+.cache/
+.vscode/
+.idea/
+
+# Dossier de build (si un jour tu en ajoutes un)
+dist/
+build/
+
+# Assets générés automatiquement (si tu fais du minify ou compile SCSS plus tard)
+*.min.css
+*.min.js
